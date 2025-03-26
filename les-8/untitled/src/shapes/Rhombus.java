@@ -1,5 +1,4 @@
 package shapes;
-
 import java.awt.*;
 
 public class Rhombus extends Shape {
@@ -14,9 +13,17 @@ public class Rhombus extends Shape {
         super(startPoint, finishPoint);
     }
 
-    public double getSide() { return side;   }
-    public double getDiagonalY() { return diagonalY;   }
-    public double getDiagonalX() { return diagonalX;   }
+    public double getSide() {
+        return side;
+    }
+
+    public double getDiagonalY() {
+        return diagonalY;
+    }
+
+    public double getDiagonalX() {
+        return diagonalX;
+    }
 
     @Override
     public double getArea() {
@@ -66,6 +73,6 @@ public class Rhombus extends Shape {
 
     @Override
     public String toString() {
-        return name + " " + side;
+        return name;
     }
 }

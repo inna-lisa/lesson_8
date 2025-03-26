@@ -14,12 +14,14 @@ abstract class Shape implements Drawable, Borderable, Scalable {
     Color colorBorder;
     double scale;
 
-
     public Shape(Point startPoint, Point finishPoint) {
         this.startPoint = startPoint;
         this.finishPoint = finishPoint;
     }
 
+    public Shape(Shape shape){
+        this.name = shape.name;
+    }
 
     abstract double getArea();
 
@@ -32,5 +34,7 @@ abstract class Shape implements Drawable, Borderable, Scalable {
         return finishPoint;
     }
 
-
+    public void getName (){
+        System.out.println("Shape is " + this);
+    }
 }

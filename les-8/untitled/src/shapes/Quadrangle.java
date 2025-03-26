@@ -1,5 +1,4 @@
 package shapes;
-
 import java.awt.*;
 
 public class Quadrangle extends Shape {
@@ -10,11 +9,11 @@ public class Quadrangle extends Shape {
     public static final String name = "QUADRANGLE";
 
     public Quadrangle(Point startPoint, Point finishPoint) {
+
         super(startPoint, finishPoint);
         this.width = Utils.pointDistance(startPoint.getX(), finishPoint.getX());
         this.height = Utils.pointDistance(startPoint.getY(), finishPoint.getY());
     }
-
 
     public double getWidth() {
         return width;
@@ -23,7 +22,6 @@ public class Quadrangle extends Shape {
     public double getHeight() {
         return height;
     }
-
 
     @Override
     public double getArea() {
@@ -46,12 +44,12 @@ public class Quadrangle extends Shape {
     }
 
     @Override
-    public Point getFinishPoint() {return super.getFinishPoint();
+    public Point getFinishPoint() {
+        return super.getFinishPoint();
     }
 
     @Override
     public Object move(Point movePoint) {
-
        return new Quadrangle(movePoint, new Point((int) (movePoint.getX() + width), (int) (movePoint.getY() - height)));
 
     }
@@ -70,11 +68,10 @@ public class Quadrangle extends Shape {
     public Object Scale(double scale) {
         this.scale = scale;
         return new Quadrangle(startPoint, new Point((int) (startPoint.getX() + (width * scale)), (int) (startPoint.getY() - (height * scale))));
-
     }
 
     @Override
     public String toString() {
-        return name + " " + width + " " + height;
+        return name;
     }
 }

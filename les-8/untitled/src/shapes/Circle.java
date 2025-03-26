@@ -1,7 +1,6 @@
 package shapes;
 import java.awt.*;
 
-//shapes.Circle and Ellipse
 public class Circle extends Shape {
 
     double diameter = Utils.pointDistance(startPoint.getY(), finishPoint.getY());

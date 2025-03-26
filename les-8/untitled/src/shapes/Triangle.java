@@ -2,7 +2,6 @@ package shapes;
 
 import java.awt.*;
 
-//isosceles triangle
 public class Triangle extends Shape {
 
     double height = Utils.pointDistance(startPoint.getY(), finishPoint.getY());
@@ -11,8 +10,6 @@ public class Triangle extends Shape {
     double sideB = sideA;
     public static final String name = "TRIANGLE";
     double scale;
-
-
 
     public Triangle(Point startPoint, Point finishPoint) {
         super(startPoint, finishPoint);
@@ -77,6 +74,6 @@ public class Triangle extends Shape {
 
     @Override
     public String toString() {
-        return name + " " + sideA + " " + sideB + " " + sideC;
+        return name;
     }
 }

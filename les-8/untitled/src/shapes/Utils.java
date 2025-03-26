@@ -7,7 +7,9 @@ public class Utils {
     public static double pointDistance(double one, double two){
         double result;
         result = one - two;
-        if (result < 0 ){result *= -1;}
+        if (result < 0 ){
+            result *= -1;
+        }
         return result;
     }
 

@@ -7,7 +7,6 @@ public class Arrow extends Tools{
     public static final String name = "ARROW";
     public double length = Point.distance(startPoint.getX(),startPoint.getY(), finishPoint.getX(), finishPoint.getY());
 
-
     protected Arrow(Point startPoint, Point finishPoint) {
         super(startPoint, finishPoint);
     }
@@ -35,6 +34,7 @@ public class Arrow extends Tools{
     public Color getColor() {
         return null;
     }
+
     @Override
     public String toString() {
         return name;
