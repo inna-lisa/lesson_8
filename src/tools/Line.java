@@ -1,7 +1,7 @@
 package tools;
 import java.awt.*;
 
-public class Line extends Tools{
+public class Line extends Tools {
 
     public static final String name = "LINE";
     public double length = Point.distance(startPoint.getX(),startPoint.getY(), finishPoint.getX(), finishPoint.getY());

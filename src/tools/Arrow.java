@@ -2,7 +2,7 @@ package tools;
 
 import java.awt.*;
 
-public class Arrow extends Tools{
+public class Arrow extends Tools {
 
     public static final String name = "ARROW";
     public double length = Point.distance(startPoint.getX(),startPoint.getY(), finishPoint.getX(), finishPoint.getY());

@@ -2,7 +2,7 @@ package tools;
 
 import java.awt.*;
 
-public class Pencil extends Tools{
+public class Pencil extends Tools {
 
     protected Pencil(Point startPoint, Point finishPoint) {
         super(startPoint, finishPoint);

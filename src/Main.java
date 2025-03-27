@@ -1,16 +1,15 @@
-package test.java;
-
-import shapes.Output;
-import shapes.Quadrangle;
+import shapes.*;
+import shapes.Shape;
 import tools.Line;
+import tools.Tools;
 
 import java.awt.*;
 
-public class MainTest {
+public class Main {
     public static void main(String[] args) {
 
        // test shapes.Quadrangle
-        Quadrangle quadrangle = new Quadrangle(new Point(1, 2), new Point(-7, 8));
+        Shape quadrangle = new Quadrangle(new Point(1, 2), new Point(-7, 8));
 /*
         System.out.println(quadrangle);
         System.out.println("Area = " + quadrangle.getArea());
@@ -26,7 +25,7 @@ public class MainTest {
         System.out.println("finishPoint = " + quadrangle.getFinishPoint());
 */
         //test shapes.Rhombus
-        shapes.Rhombus rhombus = new shapes.Rhombus(new Point(8, 8), new Point(12, 2));
+        Shape rhombus = new Rhombus(new Point(8, 8), new Point(12, 2));
 /*
         System.out.println(rhombus);
         System.out.println("diagonalY = " + rhombus.getDiagonalY());
@@ -47,7 +46,7 @@ public class MainTest {
 */
 
         // test shapes.Triangle
-        shapes.Triangle triangle = new shapes.Triangle(new Point(8,8), new Point(10,10));
+        Shape triangle = new Triangle(new Point(8,8), new Point(10,10));
         /*
         System.out.println(triangle);
         System.out.println("Height = " + triangle.getHeight());
@@ -68,7 +67,7 @@ public class MainTest {
 
         //test shapes.Circle
 
-        shapes.Circle circle = new shapes.Circle(new Point(2, 2), new Point(7, 7));
+        Shape circle = new Circle(new Point(2, 2), new Point(7, 7));
         /*
         System.out.println(circle);
         System.out.println("Diameter = " + circle.getDiameter());
@@ -87,14 +86,12 @@ public class MainTest {
         System.out.println("startPoint = " + circle.getStartPoint());
         System.out.println("finishPoint = " + circle.getFinishPoint());
 */
-        Line line = new Line(new Point(2, 2), new Point(7, 7));
+        Tools line = new Line(new Point(2, 2), new Point(7, 7));
 
         Output shape1 = new Output(circle);
         Output shape2 = new Output(rhombus);
         Output shape3 = new Output(quadrangle);
         Output shape4 = new Output(triangle);
         Output shape5 = new Output(line);
-
-
     }
 }

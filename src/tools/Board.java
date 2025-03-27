@@ -2,7 +2,7 @@ package tools;
 
 import java.awt.*;
 
-public class Board extends Tools{
+public class Board extends Tools {
 
     public static final String name = "BOARD";
 

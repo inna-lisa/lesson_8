@@ -6,11 +6,19 @@ public class Circle extends Shape {
     double diameter = Utils.pointDistance(startPoint.getY(), finishPoint.getY());
     double radiusY = diameter / 2;
     double radiusX = Utils.pointDistance(startPoint.getX(), finishPoint.getX()) / 2;
-    public static final String name = "CIRCLE";
+    String name = "CIRCLE";
     double scale;
 
     public Circle(Point startPoint, Point finishPoint) {
         super(startPoint, finishPoint);
+    }
+    public Circle(){
+        super(new Point(0, 0), new Point(0, 0));
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     public double getDiameter() {
@@ -73,7 +81,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return name;
+        return name + " " + diameter;
     }
 }
 

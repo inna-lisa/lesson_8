@@ -1,6 +1,5 @@
 package tools;
 import interfaces.Drawable;
-import shapes.Utils;
 import java.awt.*;
 
 public abstract class Tools implements Drawable {

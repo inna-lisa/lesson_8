@@ -8,11 +8,16 @@ public class Triangle extends Shape {
     double sideC = Utils.pointDistance(startPoint.getX(), finishPoint.getX()) * 2;
     double sideA = Utils.hypotenuse(height, sideC / 2);
     double sideB = sideA;
-    public static final String name = "TRIANGLE";
+    String name = "TRIANGLE";
     double scale;
 
     public Triangle(Point startPoint, Point finishPoint) {
         super(startPoint, finishPoint);
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     public double getHeight() {
@@ -48,7 +53,7 @@ public class Triangle extends Shape {
 
     @Override
     public Point getStartPoint() {
-        return startPoint;
+        return super.getStartPoint();
     }
 
     @Override

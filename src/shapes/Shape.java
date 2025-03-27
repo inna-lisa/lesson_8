@@ -6,7 +6,7 @@ import interfaces.Scalable;
 
 import java.awt.*;
 
-abstract class Shape implements Drawable, Borderable, Scalable {
+public abstract class Shape implements Drawable, Borderable, Scalable {
     String name;
     Point startPoint;
     Point finishPoint;
@@ -19,11 +19,9 @@ abstract class Shape implements Drawable, Borderable, Scalable {
         this.finishPoint = finishPoint;
     }
 
-    public Shape(Shape shape){
-        this.name = shape.name;
-    }
-
     abstract double getArea();
+
+    abstract String getName ();
 
     @Override
     public Point getStartPoint() {
@@ -32,9 +30,5 @@ abstract class Shape implements Drawable, Borderable, Scalable {
 
     public Point getFinishPoint() {
         return finishPoint;
-    }
-
-    public void getName (){
-        System.out.println("Shape is " + this);
     }
 }

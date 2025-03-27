@@ -6,11 +6,17 @@ public class Rhombus extends Shape {
     double diagonalY = Utils.pointDistance(startPoint.getY(), finishPoint.getY());
     double diagonalX = Utils.pointDistance(startPoint.getX(),finishPoint.getX()) * 2;
     double side = Utils.hypotenuse(diagonalY / 2, diagonalX / 2);
-    public static final String name = "RHOMBUS";
+    String name = "RHOMBUS";
     double scale;
 
     public Rhombus(Point startPoint, Point finishPoint) {
         super(startPoint, finishPoint);
+    }
+    //public Rhombus(){}
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     public double getSide() {
